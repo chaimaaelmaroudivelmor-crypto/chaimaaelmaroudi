@@ -3,119 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chaimaa El Maroudi — Profile</title>
+<title>Chaimaa El Maroudi</title>
 
 <!--
   ═══════════════════════════════════════════════════════════
-   YOUR EDIT CHECKLIST — everything you need to change
+   YOUR EDIT CHECKLIST
   ═══════════════════════════════════════════════════════════
+   Use Ctrl+F (Cmd+F on Mac) and search the words in CAPITALS.
 
-   Use Ctrl+F (or Cmd+F) to search for the words in CAPITALS.
-
-   □ 1. COLOURS
-        Search:  CHOOSE YOUR COLOURS
-        Six ready-made themes. Swap one line to change the
-        whole site's mood.
-
-   □ 2. YOUR PHOTO
-        Save a square photo named  photo.jpg  beside this file.
-        Nothing else to do — it appears automatically.
-        No photo? Your initials show instead.
-
-   □ 3. YOUR NAME
-        Search:  EDIT-NAME     (appears 3 times)
-
-   □ 4. YOUR TITLE + INTRO
-        Search:  EDIT-INTRO
-
-   □ 5. THE 3 FLOATING LABELS around your photo
-        Search:  EDIT-BADGES
-
-   □ 6. THE 4 NUMBERS
-        Search:  EDIT-NUMBERS
-        Change data-to="4" to change the number it counts to.
-
-   □ 7. ALL YOUR TEXT
-        Search:  EDIT-TEXT     (appears throughout)
-
-   □ 8. YOUR EMAIL AND LINKS
-        Search:  EDIT-LINKS    (appears twice)
+   □ 1. COLOURS          search:  CHOOSE YOUR COLOURS
+   □ 2. YOUR PHOTO       save a square photo named photo.jpg
+                         beside this file. Nothing else to do.
+   □ 3. YOUR NAME        search:  EDIT-NAME
+   □ 4. TITLE + INTRO    search:  EDIT-INTRO
+   □ 5. FLOATING LABELS  search:  EDIT-BADGES
+   □ 6. THE 4 NUMBERS    search:  EDIT-NUMBERS
+   □ 7. ALL YOUR TEXT    search:  EDIT-TEXT
+   □ 8. EMAIL AND LINKS  search:  EDIT-LINKS
 
   ───────────────────────────────────────────────────────────
    TO PUBLISH FREE
      1. Rename this file to  index.html
-     2. github.com → new repository named  yourusername.github.io
+     2. github.com, new repository named  yourusername.github.io
      3. Upload index.html and photo.jpg
      4. Live at  https://yourusername.github.io
 
    TO PRINT AS A CV
-     Ctrl+P. The page automatically switches to a clean
-     black-on-white layout for paper.
+     Ctrl+P. The page switches to clean black on white.
   ═══════════════════════════════════════════════════════════
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 /* ═══════════════════════════════════════════════════════════
    CHOOSE YOUR COLOURS
 
-   Six themes below. Only ONE should be active at a time.
-   To switch: put /* before and */ /* after the theme you're
-   leaving, and remove them from the one you want.
+   Six themes. Only ONE active at a time.
+   To switch, move the comment markers so your chosen theme is
+   uncommented and the others are commented out.
 
-   Currently active: MIDNIGHT
+   Active now: MIDNIGHT
    ═══════════════════════════════════════════════════════════ */
 
 :root{
-  /* ---------- THEME 1: MIDNIGHT (active) ---------- */
+  /* THEME 1: MIDNIGHT (active) */
   --bg:#0A0D1A;  --surface:#121732;  --surface2:#171D3D;
   --violet:#7C5CFF;  --cyan:#22D3EE;  --pink:#FF5C8A;
   --amber:#FFB020;   --mint:#34E5B0;
   --text:#EAEEFB;  --slate:#A9B2D0;  --mute:#737DA3;
 
-  /* ---------- THEME 2: OCEAN — calm blues and teals ----------
+  /* THEME 2: OCEAN, calm blues and teals
   --bg:#04141C;  --surface:#0B2430;  --surface2:#0F2E3C;
   --violet:#3B82F6;  --cyan:#2DD4BF;  --pink:#38BDF8;
   --amber:#FBBF24;   --mint:#4ADE80;
   --text:#E6F4F6;  --slate:#9DBAC4;  --mute:#6B8A96;
-  ------------------------------------------------------------ */
+  */
 
-  /* ---------- THEME 3: PLUM — warm purples and rose ----------
+  /* THEME 3: PLUM, warm purples and rose
   --bg:#150A18;  --surface:#241030;  --surface2:#2D1440;
   --violet:#A855F7;  --cyan:#E879F9;  --pink:#FB7185;
   --amber:#FDBA74;   --mint:#F0ABFC;
   --text:#F6EAFB;  --slate:#C3A9CE;  --mute:#8E7399;
-  ------------------------------------------------------------ */
+  */
 
-  /* ---------- THEME 4: FOREST — deep greens ----------
+  /* THEME 4: FOREST, deep greens
   --bg:#071410;  --surface:#0D2419;  --surface2:#123020;
   --violet:#34D399;  --cyan:#6EE7B7;  --pink:#FCD34D;
   --amber:#FBBF24;   --mint:#A3E635;
   --text:#E7F6EE;  --slate:#A0C4B0;  --mute:#6C8F7C;
-  ------------------------------------------------------------ */
+  */
 
-  /* ---------- THEME 5: EMBER — warm oranges and reds ----------
+  /* THEME 5: EMBER, warm oranges and reds
   --bg:#160A08;  --surface:#2A1310;  --surface2:#361A14;
   --violet:#FB923C;  --cyan:#FCD34D;  --pink:#F87171;
   --amber:#FBBF24;   --mint:#FDBA74;
   --text:#FBEEE8;  --slate:#CDA79A;  --mute:#96736A;
-  ------------------------------------------------------------ */
+  */
 
-  /* ---------- THEME 6: DAYLIGHT — light background ----------
+  /* THEME 6: DAYLIGHT, light background
   --bg:#F5F6FB;  --surface:#FFFFFF;  --surface2:#FFFFFF;
   --violet:#6D4AFF;  --cyan:#0891B2;  --pink:#DB2777;
   --amber:#C2740A;   --mint:#059669;
   --text:#12162B;  --slate:#4A5270;  --mute:#787FA0;
-  ------------------------------------------------------------ */
+  */
 
   --line:rgba(128,128,160,.22);
 
-  --display:'Space Grotesk',system-ui,sans-serif;
-  --body:'IBM Plex Sans',system-ui,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --gothic:'Grenze Gotisch',Georgia,serif;
+  --body:'Inter',system-ui,-apple-system,sans-serif;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -125,7 +103,7 @@ body{
   font-family:var(--body);
   background:var(--bg);
   color:var(--text);
-  line-height:1.62;
+  line-height:1.65;
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
 }
@@ -134,304 +112,206 @@ body{
 a{color:inherit}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 
-/* ================= animated colour field ================= */
+/* ---------- background colour field ---------- */
 
 .aurora{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.blob{
-  position:absolute;border-radius:50%;
-  filter:blur(90px);opacity:.42;
-  will-change:transform;
-}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.4;will-change:transform}
 .b1{width:560px;height:560px;background:var(--violet);top:-140px;left:-120px;animation:drift1 26s ease-in-out infinite}
 .b2{width:480px;height:480px;background:var(--cyan);top:24%;right:-160px;animation:drift2 32s ease-in-out infinite}
 .b3{width:520px;height:520px;background:var(--pink);bottom:6%;left:6%;animation:drift3 29s ease-in-out infinite}
-.b4{width:400px;height:400px;background:var(--amber);bottom:-120px;right:14%;opacity:.26;animation:drift1 36s ease-in-out infinite reverse}
+.b4{width:400px;height:400px;background:var(--amber);bottom:-120px;right:14%;opacity:.24;animation:drift1 36s ease-in-out infinite reverse}
 
 @keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(120px,90px) scale(1.16)}}
 @keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-110px,130px) scale(.88)}}
 @keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(150px,-90px) scale(1.1)}}
 
-.grain{
-  position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.5;
-  background:radial-gradient(ellipse at 50% 0%,transparent 40%,var(--bg) 88%);
-}
+.vignette{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 0%,transparent 40%,var(--bg) 88%)}
 
-/* ================= shared ================= */
+/* ---------- shared ---------- */
 
-.eyebrow{
-  font-family:var(--mono);font-size:11px;letter-spacing:.18em;
-  text-transform:uppercase;
-  background:linear-gradient(90deg,var(--cyan),var(--violet));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--cyan)}
 
 section{padding:88px 0;position:relative;z-index:2}
 
 .section-head{margin-bottom:40px}
-.section-head h2{
-  font-family:var(--display);font-weight:700;
-  font-size:clamp(26px,4.4vw,42px);letter-spacing:-.03em;
-  margin-top:8px;
-}
-.section-head h2 em{
-  font-style:normal;
+.section-head h2{font-family:var(--gothic);font-weight:600;
+  font-size:clamp(30px,5vw,48px);letter-spacing:.005em;line-height:1.1;margin-top:10px}
+.section-head h2 em{font-style:normal;
   background:linear-gradient(90deg,var(--pink),var(--amber));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+  -webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* reveal on scroll */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
+.reveal{opacity:0;transform:translateY(28px);
+  transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.3,1)}
 .reveal.in{opacity:1;transform:none}
 
-/* ================= nav ================= */
+/* ---------- nav ---------- */
 
-header{
-  position:sticky;top:0;z-index:40;
-  backdrop-filter:blur(14px);
-  background:rgba(10,13,26,.72);
-  border-bottom:1px solid var(--line);
-}
-.bar{display:flex;justify-content:space-between;align-items:center;height:62px;gap:20px}
-.mark{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em}
-.mark b{
-  font-weight:500;
-  background:linear-gradient(90deg,var(--cyan),var(--violet));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+header{position:sticky;top:0;z-index:40;backdrop-filter:blur(14px);
+  background:color-mix(in srgb,var(--bg) 78%,transparent);
+  border-bottom:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:center;height:64px;gap:20px}
+.mark{font-family:var(--gothic);font-size:19px;font-weight:600;letter-spacing:.02em}
 nav{display:flex;gap:26px;font-size:14px}
 nav a{text-decoration:none;color:var(--slate);position:relative;transition:color .25s}
-nav a::after{
-  content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;
+nav a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;
   background:linear-gradient(90deg,var(--cyan),var(--violet));
-  transition:width .3s;border-radius:2px;
-}
+  transition:width .3s;border-radius:2px}
 nav a:hover{color:var(--text)}
 nav a:hover::after{width:100%}
-@media(max-width:760px){nav{display:none}}
+@media(max-width:780px){nav{display:none}}
 
-/* ================= hero ================= */
+/* ---------- hero ---------- */
 
-.hero{padding:80px 0 60px;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
-@media(max-width:860px){.hero{grid-template-columns:1fr;gap:48px;padding-top:56px}}
+.hero{padding:76px 0 56px;display:grid;grid-template-columns:1.05fr .95fr;
+  gap:48px;align-items:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:48px;padding-top:52px}}
 
-.hero h1{
-  font-family:var(--display);font-weight:700;
-  font-size:clamp(40px,7.4vw,72px);line-height:1;
-  letter-spacing:-.045em;margin:14px 0 18px;
-}
-.hero h1 .g{
-  background:linear-gradient(115deg,var(--cyan) 0%,var(--violet) 45%,var(--pink) 100%);
+.hero h1{font-family:var(--gothic);font-weight:700;
+  font-size:clamp(46px,8.4vw,82px);line-height:.98;
+  letter-spacing:.004em;margin:12px 0 16px}
+.hero h1 .g{background:linear-gradient(115deg,var(--cyan) 0%,var(--violet) 45%,var(--pink) 100%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
-  background-size:200% 200%;
-  animation:shift 9s ease infinite;
-}
+  background-size:200% 200%;animation:shift 9s ease infinite}
 @keyframes shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 
-.role{
-  font-family:var(--mono);font-size:14px;letter-spacing:.06em;
-  color:var(--slate);margin-bottom:22px;
-}
-.role b{color:var(--amber);font-weight:400}
-
+.role{font-size:15px;font-weight:500;color:var(--amber);margin-bottom:20px;letter-spacing:.01em}
 .lede{font-size:clamp(15.5px,1.9vw,17.5px);color:var(--slate);max-width:52ch}
 
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.btn{
-  font-family:var(--mono);font-size:13px;text-decoration:none;
-  padding:12px 22px;border-radius:100px;
-  border:1px solid var(--line);color:var(--text);
-  transition:transform .25s,box-shadow .25s,background .25s;
-  display:inline-block;
-}
+.btn{font-size:14px;font-weight:500;text-decoration:none;padding:12px 24px;
+  border-radius:100px;border:1px solid var(--line);color:var(--text);
+  transition:transform .25s,box-shadow .25s,background .25s;display:inline-block}
 .btn:hover{transform:translateY(-2px)}
-.btn.key{
-  background:linear-gradient(100deg,var(--violet),var(--pink));
+.btn.key{background:linear-gradient(100deg,var(--violet),var(--pink));
   border-color:transparent;color:#fff;
-  box-shadow:0 10px 30px -10px rgba(124,92,255,.7);
-}
+  box-shadow:0 10px 30px -10px rgba(124,92,255,.7)}
 .btn.key:hover{box-shadow:0 16px 38px -10px rgba(255,92,138,.65)}
-.btn.ghost:hover{background:rgba(255,255,255,.06)}
+.btn.ghost:hover{background:color-mix(in srgb,var(--text) 8%,transparent)}
 
-/* ---- the photo, in 3D ---- */
+/* ---------- photo with live math figures ---------- */
 
-.photo-stage{
-  perspective:1100px;
-  display:flex;align-items:center;justify-content:center;
-  position:relative;min-height:360px;
-}
+.photo-stage{position:relative;display:flex;align-items:center;justify-content:center;
+  min-height:440px;perspective:1100px}
 
-.photo-3d{
-  position:relative;width:min(300px,74vw);aspect-ratio:1;
+#mathfig{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+
+.photo-3d{position:relative;width:min(264px,60vw);aspect-ratio:1;
   transform-style:preserve-3d;
   transition:transform .5s cubic-bezier(.2,.7,.3,1);
-  animation:float 7s ease-in-out infinite;
-}
-@keyframes float{0%,100%{translate:0 0}50%{translate:0 -14px}}
+  animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -12px}}
 
-/* rotating gradient ring */
-.ring{
-  position:absolute;inset:-16px;border-radius:50%;
-  background:conic-gradient(from 0deg,var(--cyan),var(--violet),var(--pink),var(--amber),var(--cyan));
-  animation:spin 11s linear infinite;
-  filter:blur(2px);opacity:.9;
-}
-.ring::after{
-  content:"";position:absolute;inset:14px;border-radius:50%;background:var(--bg);
-}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-.photo-frame{
-  position:absolute;inset:0;border-radius:50%;overflow:hidden;
-  transform:translateZ(42px);
+.photo-frame{position:absolute;inset:0;border-radius:50%;overflow:hidden;
+  transform:translateZ(46px);
   box-shadow:0 26px 60px -18px rgba(0,0,0,.75);
   background:linear-gradient(150deg,var(--surface2),var(--surface));
-  display:flex;align-items:center;justify-content:center;
-}
+  border:1px solid color-mix(in srgb,var(--cyan) 40%,transparent);
+  display:flex;align-items:center;justify-content:center}
 .photo-frame img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* shown only if photo.jpg is missing */
-.initials{
-  font-family:var(--display);font-weight:700;font-size:66px;
-  letter-spacing:-.03em;
+.initials{font-family:var(--gothic);font-weight:700;font-size:62px;
   background:linear-gradient(120deg,var(--cyan),var(--pink));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+  -webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* floating badges around the photo */
-.badge{
-  position:absolute;font-family:var(--mono);font-size:11px;
-  padding:8px 14px;border-radius:100px;white-space:nowrap;
-  background:rgba(18,23,50,.9);border:1px solid var(--line);
-  backdrop-filter:blur(8px);
-  box-shadow:0 10px 26px -12px rgba(0,0,0,.8);
-}
-.bg1{top:6%;left:-12%;transform:translateZ(78px);color:var(--cyan);animation:float 6s ease-in-out infinite .4s}
-.bg2{bottom:14%;right:-14%;transform:translateZ(64px);color:var(--pink);animation:float 7.5s ease-in-out infinite 1.1s}
-.bg3{bottom:-4%;left:4%;transform:translateZ(52px);color:var(--amber);animation:float 6.8s ease-in-out infinite .7s}
-@media(max-width:520px){.bg1{left:-4%}.bg2{right:-4%}}
+.badge{position:absolute;font-size:12px;font-weight:500;
+  padding:8px 15px;border-radius:100px;white-space:nowrap;
+  background:color-mix(in srgb,var(--surface) 88%,transparent);
+  border:1px solid var(--line);backdrop-filter:blur(8px);
+  box-shadow:0 10px 26px -12px rgba(0,0,0,.8)}
+.bg1{top:2%;left:-16%;transform:translateZ(80px);color:var(--cyan);animation:float 6s ease-in-out infinite .4s}
+.bg2{bottom:12%;right:-18%;transform:translateZ(66px);color:var(--pink);animation:float 7.5s ease-in-out infinite 1.1s}
+.bg3{bottom:-6%;left:0%;transform:translateZ(54px);color:var(--amber);animation:float 6.8s ease-in-out infinite .7s}
+@media(max-width:560px){.bg1{left:-4%}.bg2{right:-4%}}
 
-/* wireframe cube drifting behind */
-.cube-stage{position:absolute;top:2%;right:4%;perspective:600px;opacity:.5}
-.cube{
-  width:74px;height:74px;position:relative;transform-style:preserve-3d;
-  animation:tumble 17s linear infinite;
-}
-.cube span{
-  position:absolute;inset:0;border:1px solid var(--cyan);opacity:.55;
-}
-.cube span:nth-child(1){transform:translateZ(37px)}
-.cube span:nth-child(2){transform:rotateY(180deg) translateZ(37px);border-color:var(--pink)}
-.cube span:nth-child(3){transform:rotateY(90deg)  translateZ(37px);border-color:var(--violet)}
-.cube span:nth-child(4){transform:rotateY(-90deg) translateZ(37px)}
-.cube span:nth-child(5){transform:rotateX(90deg)  translateZ(37px);border-color:var(--amber)}
-.cube span:nth-child(6){transform:rotateX(-90deg) translateZ(37px)}
-@keyframes tumble{to{transform:rotateX(360deg) rotateY(360deg)}}
-@media(max-width:860px){.cube-stage{display:none}}
+/* ---------- counters ---------- */
 
-/* ================= counters ================= */
-
-.counts{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  gap:16px;margin-top:64px;
-}
-.count{
-  background:rgba(18,23,50,.6);border:1px solid var(--line);
-  border-radius:16px;padding:20px 22px;backdrop-filter:blur(10px);
-  transition:transform .3s,border-color .3s;
-}
-.count:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.24)}
-.count .n{
-  font-family:var(--display);font-weight:700;font-size:34px;letter-spacing:-.03em;
-  display:block;line-height:1.1;
-}
+.counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:16px;margin-top:56px}
+.count{background:color-mix(in srgb,var(--surface) 62%,transparent);
+  border:1px solid var(--line);border-radius:16px;padding:20px 22px;
+  backdrop-filter:blur(10px);transition:transform .3s,border-color .3s}
+.count:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--text) 26%,transparent)}
+.count .n{font-family:var(--gothic);font-weight:700;font-size:36px;
+  display:block;line-height:1.1;letter-spacing:.01em}
 .count:nth-child(1) .n{color:var(--cyan)}
 .count:nth-child(2) .n{color:var(--pink)}
 .count:nth-child(3) .n{color:var(--amber)}
 .count:nth-child(4) .n{color:var(--mint)}
-.count .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mute)}
+.count .k{font-size:11.5px;font-weight:500;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--mute)}
 
-/* ================= tilt cards ================= */
+/* ---------- cards ---------- */
 
-.cards{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));
-  gap:20px;perspective:1400px;
-}
-.card{
-  position:relative;overflow:hidden;
-  background:linear-gradient(160deg,rgba(23,29,61,.9),rgba(18,23,50,.75));
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));
+  gap:20px;perspective:1400px}
+.card{position:relative;overflow:hidden;
+  background:linear-gradient(160deg,
+    color-mix(in srgb,var(--surface2) 92%,transparent),
+    color-mix(in srgb,var(--surface) 78%,transparent));
   border:1px solid var(--line);border-radius:18px;padding:28px 24px;
   transform-style:preserve-3d;
   transition:transform .4s cubic-bezier(.2,.7,.3,1),box-shadow .4s,border-color .4s;
-  backdrop-filter:blur(10px);will-change:transform;
-}
+  backdrop-filter:blur(10px);will-change:transform}
 .card:hover,.card:focus-within{
-  border-color:rgba(255,255,255,.26);
-  box-shadow:0 30px 60px -26px rgba(0,0,0,.9);
-}
-.card .glare{
-  position:absolute;inset:0;pointer-events:none;opacity:0;
+  border-color:color-mix(in srgb,var(--text) 28%,transparent);
+  box-shadow:0 30px 60px -26px rgba(0,0,0,.9)}
+.card .glare{position:absolute;inset:0;pointer-events:none;opacity:0;
   transition:opacity .35s;
-  background:radial-gradient(400px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.13),transparent 45%);
-}
+  background:radial-gradient(400px circle at var(--mx,50%) var(--my,50%),
+    rgba(255,255,255,.12),transparent 45%)}
 .card:hover .glare{opacity:1}
-.card::before{
-  content:"";position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink));
-}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--cyan),var(--violet),var(--pink))}
 .card:nth-child(2)::before{background:linear-gradient(90deg,var(--pink),var(--amber))}
 .card:nth-child(3)::before{background:linear-gradient(90deg,var(--mint),var(--cyan))}
 
-.card .num{
-  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--mute);
-}
-.card h3{
-  font-family:var(--display);font-weight:700;font-size:19px;
-  letter-spacing:-.02em;margin:10px 0 10px;
-}
+.card .num{font-size:12px;font-weight:600;letter-spacing:.14em;color:var(--mute)}
+.card h3{font-family:var(--gothic);font-weight:600;font-size:23px;
+  letter-spacing:.01em;margin:10px 0 10px;line-height:1.2}
 .card p{font-size:14.8px;color:var(--slate)}
 
-/* ================= skills ================= */
+/* ---------- skills ---------- */
 
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:36px}
-.skillset h4{
-  font-family:var(--mono);font-size:11px;letter-spacing:.15em;
+.skillset h4{font-size:11.5px;font-weight:600;letter-spacing:.14em;
   text-transform:uppercase;color:var(--mute);
-  margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--line);
-}
+  margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
 .skill{margin-bottom:16px}
 .skill .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
 .skill .name{font-size:14.8px}
-.skill .lvl{font-family:var(--mono);font-size:10.5px;color:var(--mute)}
-.meter{height:5px;background:rgba(255,255,255,.08);border-radius:100px;overflow:hidden}
-.meter i{
-  display:block;height:100%;width:0;border-radius:100px;
+.skill .lvl{font-size:11.5px;color:var(--mute)}
+.meter{height:5px;background:color-mix(in srgb,var(--text) 10%,transparent);
+  border-radius:100px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;border-radius:100px;
   background:linear-gradient(90deg,var(--cyan),var(--violet));
-  transition:width 1.3s cubic-bezier(.2,.8,.25,1);
-}
+  transition:width 1.3s cubic-bezier(.2,.8,.25,1)}
 .skillset:nth-child(2) .meter i{background:linear-gradient(90deg,var(--pink),var(--amber))}
 .skillset:nth-child(3) .meter i{background:linear-gradient(90deg,var(--mint),var(--cyan))}
 
-/* ================= timeline ================= */
+/* ---------- timeline ---------- */
 
-.timeline{border-left:2px solid rgba(255,255,255,.12);padding-left:28px;margin-left:6px}
+.timeline{border-left:2px solid var(--line);padding-left:28px;margin-left:6px}
 .timeline li{list-style:none;position:relative;padding-bottom:36px}
 .timeline li:last-child{padding-bottom:0}
-.timeline li::before{
-  content:"";position:absolute;left:-35px;top:8px;width:12px;height:12px;
-  border-radius:50%;background:var(--bg);border:2px solid var(--mute);
-}
-.timeline li.now::before{
-  border-color:var(--cyan);background:var(--cyan);
-  box-shadow:0 0 0 5px rgba(34,211,238,.16);
-}
-.timeline .when{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:5px}
-.timeline h3{font-family:var(--display);font-weight:700;font-size:18.5px;letter-spacing:-.02em;margin-bottom:3px}
+.timeline li::before{content:"";position:absolute;left:-35px;top:8px;
+  width:12px;height:12px;border-radius:50%;background:var(--bg);
+  border:2px solid var(--mute)}
+.timeline li.now::before{border-color:var(--cyan);background:var(--cyan);
+  box-shadow:0 0 0 5px color-mix(in srgb,var(--cyan) 18%,transparent)}
+.timeline .when{font-size:11.5px;font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--amber);display:block;margin-bottom:5px}
+.timeline h3{font-family:var(--gothic);font-weight:600;font-size:22px;
+  letter-spacing:.01em;margin-bottom:3px}
 .timeline .org{font-size:14px;color:var(--violet);margin-bottom:10px}
 .timeline ul{list-style:none;font-size:14.8px;color:var(--slate)}
 .timeline ul li{padding:3px 0 3px 16px;position:relative}
-.timeline ul li::before{content:"";position:absolute;left:0;top:14px;width:7px;height:1px;background:var(--mute);border:none;border-radius:0;box-shadow:none}
+.timeline ul li::before{content:"";position:absolute;left:0;top:14px;
+  width:7px;height:1px;background:var(--mute);border:none;
+  border-radius:0;box-shadow:none}
 
-/* ================= split ================= */
+/* ---------- split ---------- */
 
 .split{display:grid;grid-template-columns:1fr 1fr;gap:52px}
 @media(max-width:800px){.split{grid-template-columns:1fr;gap:44px}}
@@ -439,42 +319,34 @@ nav a:hover::after{width:100%}
 .lang{margin-bottom:20px}
 .lang .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
 .lang .name{font-size:16px;font-weight:500}
-.lang .lvl{font-family:var(--mono);font-size:11.5px;color:var(--cyan)}
+.lang .lvl{font-size:12.5px;color:var(--cyan)}
 .lang .note{font-size:13.5px;color:var(--mute)}
 
-.cert{
-  padding:15px 0;border-bottom:1px solid var(--line);
-  display:flex;justify-content:space-between;gap:14px;align-items:baseline;
-}
+.cert{padding:15px 0;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:14px;align-items:baseline}
 .cert:last-child{border-bottom:none}
 .cert .name{font-size:15px}
-.cert .st{
-  font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;
-  white-space:nowrap;padding:3px 10px;border-radius:100px;
-  border:1px solid var(--line);color:var(--mute);
-}
-.cert .st.have{color:var(--mint);border-color:rgba(52,229,176,.4)}
-.cert .st.soon{color:var(--amber);border-color:rgba(255,176,32,.4)}
+.cert .st{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  white-space:nowrap;padding:3px 11px;border-radius:100px;
+  border:1px solid var(--line);color:var(--mute)}
+.cert .st.have{color:var(--mint);border-color:color-mix(in srgb,var(--mint) 45%,transparent)}
+.cert .st.soon{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent)}
 
-/* ================= footer ================= */
+/* ---------- footer ---------- */
 
-footer{position:relative;z-index:2;padding:80px 0 48px;border-top:1px solid var(--line);margin-top:40px}
-footer h2{
-  font-family:var(--display);font-weight:700;
-  font-size:clamp(28px,4.6vw,46px);letter-spacing:-.03em;margin-bottom:14px;
-}
-footer h2 em{
-  font-style:normal;
+footer{position:relative;z-index:2;padding:80px 0 48px;
+  border-top:1px solid var(--line);margin-top:40px}
+footer h2{font-family:var(--gothic);font-weight:600;
+  font-size:clamp(32px,5vw,52px);letter-spacing:.005em;margin-bottom:14px}
+footer h2 em{font-style:normal;
   background:linear-gradient(100deg,var(--cyan),var(--violet),var(--pink));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
+  -webkit-background-clip:text;background-clip:text;color:transparent}
 footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
-.colophon{margin-top:48px;font-family:var(--mono);font-size:11px;color:var(--mute)}
+.colophon{margin-top:48px;font-size:12px;color:var(--mute)}
 
-
-/* ═══════ PRINT — turns the page into a clean paper CV ═══════ */
+/* ═══════ PRINT, turns the page into a paper CV ═══════ */
 @media print{
-  .aurora,.grain,.cube-stage,.ring,.badge,header,.cta,.glare{display:none!important}
+  .aurora,.vignette,#mathfig,.badge,header,.cta,.glare{display:none!important}
   body{background:#fff!important;color:#111!important}
   .wrap{max-width:100%;padding:0}
   section{padding:14px 0;page-break-inside:avoid}
@@ -483,9 +355,8 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
     -webkit-text-fill-color:#111!important;background:none!important}
   .section-head h2,.section-head h2 em,footer h2,footer h2 em{
     color:#111!important;-webkit-text-fill-color:#111!important;
-    background:none!important;font-size:15pt!important}
-  .eyebrow{color:#666!important;-webkit-text-fill-color:#666!important;
-    background:none!important}
+    background:none!important;font-size:16pt!important}
+  .eyebrow{color:#666!important}
   .card,.count{background:#fff!important;border:1px solid #ccc!important;
     box-shadow:none!important;transform:none!important;
     backdrop-filter:none!important;page-break-inside:avoid}
@@ -495,9 +366,9 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
     color:#333!important;-webkit-text-fill-color:#333!important}
   .meter{border:1px solid #999}
   .meter i{background:#333!important}
+  .photo-stage{min-height:auto}
   .photo-3d{width:110px!important;animation:none!important;transform:none!important}
-  .photo-frame{transform:none!important;box-shadow:none!important;
-    border:1px solid #999}
+  .photo-frame{transform:none!important;box-shadow:none!important;border:1px solid #999}
   .reveal{opacity:1!important;transform:none!important}
   a{text-decoration:none;color:#111!important}
   footer{border-top:1px solid #ccc;padding:14px 0}
@@ -505,7 +376,6 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
-  .meter i{width:var(--w)!important}
   .reveal{opacity:1;transform:none}
 }
 </style>
@@ -513,17 +383,15 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 <body>
 
 <div class="aurora">
-  <div class="blob b1"></div>
-  <div class="blob b2"></div>
-  <div class="blob b3"></div>
-  <div class="blob b4"></div>
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="blob b3"></div><div class="blob b4"></div>
 </div>
-<div class="grain"></div>
+<div class="vignette"></div>
 
 <header>
   <div class="wrap bar">
     <!-- EDIT-NAME -->
-    <div class="mark">CHAIMAA EL MAROUDI <b>/ PROFILE</b></div>
+    <div class="mark">Chaimaa El Maroudi</div>
     <nav>
       <a href="#profile">Profile</a>
       <a href="#strengths">Strengths</a>
@@ -536,48 +404,40 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 
 <main>
 
-<!-- ============ HERO ============ -->
-
 <div class="wrap hero">
   <div>
-    <div class="eyebrow">Casablanca · Morocco</div>
+    <div class="eyebrow">Casablanca, Morocco</div>
 
     <!-- EDIT-NAME -->
     <h1>Chaimaa<br><span class="g">El Maroudi</span></h1>
 
     <!-- EDIT-INTRO : your title -->
-    <div class="role">Operations &amp; Service Support <b>·</b> Client Coordination <b>·</b> Process Improvement</div>
+    <div class="role">Service Operations Analysis and Support</div>
 
     <!-- EDIT-INTRO : two or three sentences in your own voice -->
     <p class="lede">
-      I work across the service cycle — ticket follow-up, technician and
-      service-leader coordination, contract and portfolio records, and direct
-      client contact. I also propose process changes, several of which are now
-      standard practice.
+      I extract data from our service platform and analyse it with Python to
+      measure how interventions are performing. Around that, I coordinate
+      technicians and service leaders, maintain contract and portfolio
+      records, and work directly with clients.
     </p>
 
     <div class="cta">
       <!-- EDIT-LINKS : your email and CV -->
-      <a class="btn key" href="mailto:you@example.com">Get in touch</a>
+      <a class="btn key" href="mailto:chaimaaelmaroudi.velmor@gmail.com">Get in touch</a>
       <a class="btn ghost" href="cv.pdf">Download CV</a>
     </div>
   </div>
 
   <div class="photo-stage">
-    <div class="cube-stage">
-      <div class="cube">
-        <span></span><span></span><span></span>
-        <span></span><span></span><span></span>
-      </div>
-    </div>
+    <canvas id="mathfig" aria-hidden="true"></canvas>
 
     <div class="photo-3d" id="photo3d">
-      <div class="ring"></div>
       <div class="photo-frame">
         <!--
-          EDIT: PUT YOUR PHOTO HERE
-          Save a square photo as  photo.jpg  next to this file.
-          If it's missing, your initials show instead.
+          EDIT-PHOTO
+          Save a square photo named  photo.jpg  next to this file.
+          If it is missing, your initials show instead.
         -->
         <img src="photo.jpg" alt="Chaimaa El Maroudi"
              onerror="this.style.display='none';document.getElementById('ini').style.display='block'">
@@ -585,20 +445,22 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
       </div>
 
       <!-- EDIT-BADGES : three short things about you -->
-      <div class="badge bg1">Ticket follow-up</div>
-      <div class="badge bg2">Client-facing</div>
-      <div class="badge bg3">AR · FR · EN</div>
+      <div class="badge bg1">Python analysis</div>
+      <div class="badge bg2">Client facing</div>
+      <div class="badge bg3">AR, FR, EN</div>
     </div>
   </div>
 </div>
 
 <div class="wrap">
-  <!-- EDIT-NUMBERS : your real numbers. Keep them honest. -->
+  <!-- EDIT-NUMBERS : your real figures. Keep them honest.
+       For a counting number use   data-to="240"
+       For fixed text use          data-static="1y 2m" -->
   <div class="counts reveal">
-    <div class="count"><span class="n" data-to="4" data-suffix="">0</span><span class="k">Years in operations</span></div>
-    <div class="count"><span class="n" data-to="240" data-suffix="+">0</span><span class="k">Tickets followed monthly</span></div>
-    <div class="count"><span class="n" data-to="3" data-suffix="">0</span><span class="k">Languages daily</span></div>
-    <div class="count"><span class="n" data-to="3" data-suffix="">0</span><span class="k">Proposals adopted</span></div>
+    <div class="count"><span class="n" data-static="1y 2m">0</span><span class="k">In service operations</span></div>
+    <div class="count"><span class="n" data-to="240" data-suffix="+">0</span><span class="k">Tickets analysed monthly</span></div>
+    <div class="count"><span class="n" data-to="3">0</span><span class="k">Languages daily</span></div>
+    <div class="count"><span class="n" data-to="3">0</span><span class="k">Proposals adopted</span></div>
   </div>
 </div>
 
@@ -607,7 +469,7 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 <section id="profile">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">01 — Who I am</div>
+      <div class="eyebrow">01, Who I am</div>
       <h2>Operations first, <em>engineering next</em></h2>
     </div>
 
@@ -615,32 +477,33 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
       <div>
         <!-- EDIT-TEXT : the most important text on the page. Your voice. -->
         <p style="font-size:17px;margin-bottom:16px">
-          I work in operations and service support, holding the daily, weekly
-          and monthly rhythm of a technical service department together.
+          Most of my week is spent with data. I pull ticket exports from the
+          service platform and run Python scripts over them to see which
+          interventions are closing on time, which are not, and where the
+          delays are concentrated.
         </p>
         <p style="color:var(--slate);margin-bottom:16px">
-          When a client opens a ticket, I follow it until a technician closes
-          it. In between I coordinate with service leaders, keep contract and
-          portfolio records current, classify new units, and handle client
-          contact by email, telephone and in person.
+          The rest of the role is everything that surrounds that: coordinating
+          technicians and service leaders, keeping contract and portfolio
+          records current, classifying new units, and speaking with clients by
+          email, telephone and in person.
         </p>
         <p style="color:var(--slate)">
-          The work runs across every part of the department, so I've learned
-          how the whole service cycle fits together rather than one section
-          of it.
+          Because the work runs across the whole department, I have learned how
+          the full service cycle fits together rather than one section of it.
         </p>
       </div>
       <div>
         <p style="color:var(--slate);margin-bottom:16px">
           The part I enjoy most is improving the process rather than only
-          running it. I notice where things break, propose changes, and
+          running it. I look for where things break, propose changes, and
           several of my proposals have been adopted and are now standard.
         </p>
         <p style="color:var(--slate)">
-          That instinct is what led me toward technology. I'm studying
-          computer science alongside the job, aiming to build the operational
-          tools I currently work around — I know that problem from the inside
-          rather than from a case study.
+          That is what pulled me toward technology. I am studying computer
+          science alongside the job, building on the analysis work I already
+          do, and aiming to build the operational tools I currently work
+          around.
         </p>
       </div>
     </div>
@@ -652,7 +515,7 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 <section id="strengths">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">02 — What I bring</div>
+      <div class="eyebrow">02, What I bring</div>
       <h2>Three things I <em>do well</em></h2>
     </div>
 
@@ -661,22 +524,22 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
       <article class="card">
         <div class="glare"></div>
         <div class="num">01</div>
-        <h3>End-to-end ticket ownership</h3>
-        <p>From the moment a client reports a fault until a technician closes it, I follow the ticket. Tracking status, coordinating the people involved, and making sure nothing stalls quietly in the middle.</p>
+        <h3>Turning exports into answers</h3>
+        <p>I take raw ticket data out of the service platform and analyse it with Python, producing a clear picture of which interventions perform and which do not. Judgement based on numbers, not impressions.</p>
       </article>
 
       <article class="card">
         <div class="glare"></div>
         <div class="num">02</div>
-        <h3>Client-facing under pressure</h3>
-        <p>Clients reach me by email, phone and in person, often when something has gone wrong. I give clear answers, set realistic expectations, and follow through on what I promise.</p>
+        <h3>Client facing under pressure</h3>
+        <p>Clients reach me by email, telephone and in person, usually when something has gone wrong. I give clear answers, set realistic expectations, and follow through on what I promise.</p>
       </article>
 
       <article class="card">
         <div class="glare"></div>
         <div class="num">03</div>
         <h3>Improvements that get adopted</h3>
-        <p>I don't only report problems, I propose fixes. Several of my proposals have been taken up and are now how the department works.</p>
+        <p>I do not only report problems, I propose fixes. Several of my proposals have been taken up and are now part of how the department works.</p>
       </article>
     </div>
   </div>
@@ -687,28 +550,28 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 <section id="skills">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">03 — Capability</div>
+      <div class="eyebrow">03, Capability</div>
       <h2>Honest levels, <em>not aspirations</em></h2>
     </div>
 
-    <!-- EDIT-TEXT : change data-w to set each bar (a number out of 100) -->
+    <!-- EDIT-TEXT : change data-w to set each bar, a number out of 100 -->
     <div class="skills reveal">
 
       <div class="skillset">
-        <h4>Operations</h4>
-        <div class="skill"><div class="row"><span class="name">Ticket lifecycle follow-up</span><span class="lvl">Advanced</span></div><div class="meter"><i data-w="92"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">Client relations &amp; escalation</span><span class="lvl">Advanced</span></div><div class="meter"><i data-w="88"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">Contract &amp; portfolio records</span><span class="lvl">Advanced</span></div><div class="meter"><i data-w="86"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">Periodic reporting cycles</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="80"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">Technician coordination</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="78"></i></div></div>
+        <h4>Analysis</h4>
+        <div class="skill"><div class="row"><span class="name">Data extraction and cleaning</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="80"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">Python for reporting</span><span class="lvl">Working</span></div><div class="meter"><i data-w="60"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">Performance analysis</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="78"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">Excel, advanced</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="82"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">SQL</span><span class="lvl">Learning</span></div><div class="meter"><i data-w="30"></i></div></div>
       </div>
 
       <div class="skillset">
-        <h4>Technical</h4>
-        <div class="skill"><div class="row"><span class="name">Excel — advanced</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="80"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">Python</span><span class="lvl">Learning</span></div><div class="meter"><i data-w="35"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">SQL</span><span class="lvl">Learning</span></div><div class="meter"><i data-w="30"></i></div></div>
-        <div class="skill"><div class="row"><span class="name">Power BI</span><span class="lvl">Learning</span></div><div class="meter"><i data-w="25"></i></div></div>
+        <h4>Operations</h4>
+        <div class="skill"><div class="row"><span class="name">Ticket lifecycle follow-up</span><span class="lvl">Advanced</span></div><div class="meter"><i data-w="90"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">Client relations and escalation</span><span class="lvl">Advanced</span></div><div class="meter"><i data-w="87"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">Contract and portfolio records</span><span class="lvl">Advanced</span></div><div class="meter"><i data-w="85"></i></div></div>
+        <div class="skill"><div class="row"><span class="name">Technician coordination</span><span class="lvl">Strong</span></div><div class="meter"><i data-w="78"></i></div></div>
       </div>
 
       <div class="skillset">
@@ -727,14 +590,14 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 <section id="journey">
   <div class="wrap">
     <div class="section-head reveal">
-      <div class="eyebrow">04 — Journey</div>
-      <h2>Where I've <em>been</em></h2>
+      <div class="eyebrow">04, Journey</div>
+      <h2>Where I have <em>been</em></h2>
     </div>
 
     <ul class="timeline reveal">
       <!-- EDIT-TEXT : your whole timeline -->
       <li class="now">
-        <span class="when">2026 — present</span>
+        <span class="when">2026 to present</span>
         <h3>BSc Computer Science</h3>
         <div class="org">Studying online, alongside full-time work</div>
         <ul>
@@ -744,22 +607,22 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
       </li>
 
       <li class="now">
-        <span class="when">Year — present</span>
-        <h3>Operations &amp; Service Support</h3>
-        <div class="org">Technical services sector — Casablanca</div>
+        <span class="when">2025 to present</span>
+        <h3>Service Operations Analysis and Support</h3>
+        <div class="org">Technical services sector, Casablanca</div>
         <ul>
-          <li>Follow client tickets from first report through to technician closure</li>
-          <li>Run daily, weekly and monthly follow-up and reporting cycles</li>
+          <li>Extract and analyse ticket data with Python to measure intervention performance</li>
+          <li>Produce daily, weekly and monthly reporting cycles</li>
           <li>Coordinate technicians and service leaders on open interventions</li>
           <li>Maintain contract records, portfolio data and classification of new units</li>
           <li>Handle client contact by email, telephone and in person</li>
-          <li>Propose process improvements — several adopted as standard practice</li>
+          <li>Propose process improvements, several adopted as standard practice</li>
         </ul>
       </li>
 
       <li>
         <span class="when">2025</span>
-        <h3>Baccalaureate — Physics, French option</h3>
+        <h3>Baccalaureate, Physics with French option</h3>
         <div class="org">Casablanca</div>
         <ul>
           <li>Strongest results in English, philosophy and physics</li>
@@ -769,7 +632,7 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
   </div>
 </section>
 
-<!-- ============ LANGUAGES + CERTS ============ -->
+<!-- ============ LANGUAGES AND CERTIFICATIONS ============ -->
 
 <section>
   <div class="wrap">
@@ -777,7 +640,7 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 
       <div>
         <div class="section-head">
-          <div class="eyebrow">05 — Languages</div>
+          <div class="eyebrow">05, Languages</div>
           <h2>Three <em>daily</em></h2>
         </div>
         <!-- EDIT-TEXT -->
@@ -797,14 +660,14 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 
       <div>
         <div class="section-head">
-          <div class="eyebrow">06 — Certifications</div>
+          <div class="eyebrow">06, Certifications</div>
           <h2>In <em>progress</em></h2>
         </div>
         <!-- EDIT-TEXT : mark certifications honestly -->
-        <div class="cert"><span class="name">ITIL 4 Foundation — service management</span><span class="st soon">In progress</span></div>
+        <div class="cert"><span class="name">ITIL 4 Foundation, service management</span><span class="st soon">In progress</span></div>
         <div class="cert"><span class="name">Microsoft Power BI (PL-300)</span><span class="st">Planned</span></div>
-        <div class="cert"><span class="name">Python — freeCodeCamp</span><span class="st soon">In progress</span></div>
-        <div class="cert"><span class="name">CAPM — project management</span><span class="st">Planned</span></div>
+        <div class="cert"><span class="name">Python, freeCodeCamp</span><span class="st soon">In progress</span></div>
+        <div class="cert"><span class="name">CAPM, project management</span><span class="st">Planned</span></div>
       </div>
 
     </div>
@@ -815,21 +678,20 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
 
 <footer id="contact">
   <div class="wrap reveal">
-    <div class="eyebrow">07 — Contact</div>
-    <h2>Let's <em>talk</em></h2>
+    <div class="eyebrow">07, Contact</div>
+    <h2>Let us <em>talk</em></h2>
     <p>
-      Open to roles in service operations, business analysis and technical
-      administration — and to conversations about anything in between.
+      Open to roles in service operations, data analysis and technical
+      administration, and to conversations about anything in between.
     </p>
 
     <div class="cta" style="margin-top:0">
-      <!-- EDIT-LINKS : real links only. Delete what you don't have. -->
-      <a class="btn key" href="mailto:you@example.com">you@example.com</a>
-      <a class="btn ghost" href="https://linkedin.com/in/yourusername">LinkedIn</a>
-      <a class="btn ghost" href="https://github.com/yourusername">GitHub</a>
+      <!-- EDIT-LINKS : real links only. Delete what you do not have. -->
+      <a class="btn key" href="mailto:chaimaaelmaroudi.velmor@gmail.com">chaimaaelmaroudi.velmor@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/chaimaa-elmaroudi-b8477b332" target="_blank" rel="noopener">LinkedIn</a>
     </div>
 
-    <div class="colophon">Casablanca, Morocco · Built by hand</div>
+    <div class="colophon">Casablanca, Morocco</div>
   </div>
 </footer>
 
@@ -838,66 +700,164 @@ footer p{max-width:48ch;color:var(--slate);margin-bottom:30px}
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var fine = window.matchMedia('(pointer: fine)').matches;
 
-  /* ---- reveal on scroll ---- */
+  /* ---------- reveal on scroll ---------- */
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (!e.isIntersecting) return;
       e.target.classList.add('in');
       io.unobserve(e.target);
-
-      // fill any skill bars inside
       e.target.querySelectorAll('.meter i').forEach(function (bar, i) {
         setTimeout(function () { bar.style.width = bar.dataset.w + '%'; }, 90 * i);
       });
-
-      // run any counters inside
-      e.target.querySelectorAll('.n[data-to]').forEach(function (el) { countUp(el); });
+      e.target.querySelectorAll('.n').forEach(countUp);
     });
   }, { threshold: 0.15 });
-
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
-  /* ---- animated counters ---- */
   function countUp(el) {
+    if (el.dataset.static) { el.textContent = el.dataset.static; return; }
     var target = parseInt(el.dataset.to, 10);
+    if (isNaN(target)) return;
     var suffix = el.dataset.suffix || '';
     if (reduced) { el.textContent = target + suffix; return; }
-
     var start = performance.now(), dur = 1400;
-    function step(now) {
+    requestAnimationFrame(function step(now) {
       var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(target * eased) + suffix;
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + suffix;
       if (p < 1) requestAnimationFrame(step);
+    });
+  }
+
+  /* ==========================================================
+     LIVE MATH FIGURES around the photo
+     A measuring dial, three tilted orbits with travelling
+     nodes, and a Lissajous curve breathing through its phase.
+     ========================================================== */
+  var cv = document.getElementById('mathfig');
+  if (cv && !reduced) {
+    var ctx = cv.getContext('2d');
+    var css = getComputedStyle(document.documentElement);
+    var C = {
+      cyan:   css.getPropertyValue('--cyan').trim()   || '#22D3EE',
+      violet: css.getPropertyValue('--violet').trim() || '#7C5CFF',
+      pink:   css.getPropertyValue('--pink').trim()   || '#FF5C8A',
+      amber:  css.getPropertyValue('--amber').trim()  || '#FFB020',
+      mint:   css.getPropertyValue('--mint').trim()   || '#34E5B0'
+    };
+    var W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    function size() {
+      W = cv.clientWidth; H = cv.clientHeight;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
-    requestAnimationFrame(step);
+    size();
+    window.addEventListener('resize', size);
+
+    function alpha(hex, a) {
+      var h = String(hex).replace('#', '');
+      if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+      var n = parseInt(h, 16);
+      if (isNaN(n)) return 'rgba(120,180,220,' + a + ')';
+      return 'rgba(' + ((n>>16)&255) + ',' + ((n>>8)&255) + ',' + (n&255) + ',' + a + ')';
+    }
+
+    var orbits = [
+      { rx:.46, ry:.17, tilt:-0.32, speed: .00042, col:'cyan'   },
+      { rx:.44, ry:.20, tilt: 1.05, speed:-.00031, col:'violet' },
+      { rx:.42, ry:.15, tilt: 2.30, speed: .00055, col:'pink'   }
+    ];
+
+    requestAnimationFrame(function frame(t) {
+      ctx.clearRect(0, 0, W, H);
+      var cx = W/2, cy = H/2, R = Math.min(W, H);
+
+      /* measuring dial, a tick every 10 degrees */
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(t * 0.00006);
+      for (var d = 0; d < 360; d += 10) {
+        var a = d * Math.PI / 180;
+        var major = d % 90 === 0;
+        var r0 = R * (major ? .372 : .386), r1 = R * .40;
+        ctx.beginPath();
+        ctx.moveTo(Math.cos(a)*r0, Math.sin(a)*r0);
+        ctx.lineTo(Math.cos(a)*r1, Math.sin(a)*r1);
+        ctx.strokeStyle = alpha(C.mint, major ? .42 : .16);
+        ctx.lineWidth = major ? 1.4 : 1;
+        ctx.stroke();
+      }
+      ctx.restore();
+
+      /* three tilted orbits, one travelling node each */
+      orbits.forEach(function (o) {
+        var rx = R * o.rx;
+        var ry = R * o.ry * (0.72 + 0.28 * Math.sin(t*0.00023 + o.tilt));
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(o.tilt + t*0.00004);
+
+        ctx.beginPath();
+        ctx.ellipse(0, 0, rx, ry, 0, 0, Math.PI*2);
+        ctx.strokeStyle = alpha(C[o.col], .34);
+        ctx.lineWidth = 1.1;
+        ctx.stroke();
+
+        var ang = t * o.speed;
+        ctx.beginPath();
+        ctx.arc(Math.cos(ang)*rx, Math.sin(ang)*ry, 4.2, 0, Math.PI*2);
+        ctx.fillStyle = C[o.col];
+        ctx.shadowColor = C[o.col];
+        ctx.shadowBlur = 14;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.restore();
+      });
+
+      /* Lissajous curve, phase drifting continuously */
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.beginPath();
+      var A = R*.335, B = R*.335, ph = t*0.00012;
+      for (var i = 0; i <= 240; i++) {
+        var u = (i/240) * Math.PI*2;
+        var x = A * Math.sin(3*u + ph);
+        var y = B * Math.sin(2*u);
+        i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+      }
+      ctx.strokeStyle = alpha(C.amber, .30);
+      ctx.lineWidth = 1.1;
+      ctx.stroke();
+      ctx.restore();
+
+      requestAnimationFrame(frame);
+    });
   }
 
   if (reduced || !fine) return;
 
-  /* ---- photo tilt follows the cursor ---- */
+  /* ---------- photo tilts with the cursor ---------- */
   var photo = document.getElementById('photo3d');
   if (photo) {
     window.addEventListener('mousemove', function (e) {
-      var x = (e.clientX / window.innerWidth  - 0.5);
-      var y = (e.clientY / window.innerHeight - 0.5);
+      var x = e.clientX / window.innerWidth  - 0.5;
+      var y = e.clientY / window.innerHeight - 0.5;
       photo.style.transform =
-        'rotateY(' + (x * 16).toFixed(2) + 'deg) rotateX(' + (-y * 16).toFixed(2) + 'deg)';
+        'rotateY(' + (x*15).toFixed(2) + 'deg) rotateX(' + (-y*15).toFixed(2) + 'deg)';
     });
   }
 
-  /* ---- card tilt + glare ---- */
+  /* ---------- card tilt and glare ---------- */
   document.querySelectorAll('.card').forEach(function (card) {
     card.addEventListener('mousemove', function (e) {
       var b = card.getBoundingClientRect();
       var px = (e.clientX - b.left) / b.width;
       var py = (e.clientY - b.top) / b.height;
-
-      card.style.setProperty('--mx', (px * 100) + '%');
-      card.style.setProperty('--my', (py * 100) + '%');
+      card.style.setProperty('--mx', (px*100) + '%');
+      card.style.setProperty('--my', (py*100) + '%');
       card.style.transform =
-        'translateY(-6px) rotateX(' + ((0.5 - py) * 9).toFixed(2) + 'deg)' +
-        ' rotateY(' + ((px - 0.5) * 9).toFixed(2) + 'deg)';
+        'translateY(-6px) rotateX(' + ((0.5-py)*9).toFixed(2) + 'deg)' +
+        ' rotateY(' + ((px-0.5)*9).toFixed(2) + 'deg)';
     });
     card.addEventListener('mouseleave', function () { card.style.transform = ''; });
   });
